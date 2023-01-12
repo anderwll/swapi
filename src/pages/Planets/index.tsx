@@ -3,13 +3,17 @@ import { useAppDispatch, useAppSelector } from '../../store/hooks';
 import { getPlanets } from '../../store/planets/planetsSlice';
 import Paper from '@mui/material/Paper';
 
+const teste = [
+    {imgUrl: 'https://www.google.com/search?q=imagens+planetas&sxsrf=AJOqlzUHoBokD8BwsJRy1ZcRsEtI-RJXhg:1673553964636&source=lnms&tbm=isch&sa=X&ved=2ahUKEwi5hsys6sL8AhVaK7kGHRCmA9oQ_AUoAXoECAEQAw&biw=783&bih=931&dpr=1#imgrc=pbAr80fl-4EzJM'},
+    {imgUrl: 'https://www.google.com/search?q=imagens+planetas&sxsrf=AJOqlzUHoBokD8BwsJRy1ZcRsEtI-RJXhg:1673553964636&source=lnms&tbm=isch&sa=X&ved=2ahUKEwi5hsys6sL8AhVaK7kGHRCmA9oQ_AUoAXoECAEQAw&biw=783&bih=931&dpr=1#imgrc=pbAr80fl-4EzJM'}
+]
+
 const Planets = () => {
     const dispatch = useAppDispatch();
     const { data } = useAppSelector((state) => state.planet); 
 
     useEffect(() => {
         dispatch(getPlanets());
-
         console.log(data)
     }, [])
 
