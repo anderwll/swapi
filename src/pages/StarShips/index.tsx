@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import { useAppDispatch, useAppSelector } from '../../store/hooks';
 import Paper from '@mui/material/Paper';
-import { getStarShips } from '../../store/startships/startshipsSlice';
+import { getStarShips } from '../../store/starShips/starShipsSlice';
 
-const Startships = () => {
+const StarShips = () => {
     const dispatch = useAppDispatch();
     const { data } = useAppSelector((state) => state.starship); 
 
@@ -34,4 +34,4 @@ const Startships = () => {
     )
 };
 
-export default Startships;
+export default StarShips;

@@ -5,7 +5,7 @@ import { planetsReducer } from './planets/planetsSlice';
 import { filmsReducer } from './films/filmsSlice';
 import { speciesReducer } from './species/speciesSlice';
 import { vehiclesReducer } from './vehicles/vehiclesSlice';
-import { starShipsReducer } from './startships/startshipsSlice';
+import { starShipsReducer } from './starShips/starShipsSlice';
 
 const rootReducer = combineReducers({
   people: peopleReducer,

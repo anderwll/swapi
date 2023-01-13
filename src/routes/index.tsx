@@ -8,7 +8,7 @@ import Initial from '../pages/Initial';
 import Peoples from '../pages/Peoples';
 import Planets from '../pages/Planets';
 import Species from '../pages/Species';
-import Startships from '../pages/Startships';
+import Starships from '../pages/StarShips';
 import Vehicles from '../pages/Vehicles';
 
 const AppRoutes = () => {
@@ -22,7 +22,7 @@ const AppRoutes = () => {
                 <Route path='/films' element={<Films />}/>
                 <Route path='/species' element={<Species />}/>
                 <Route path='/vehicles' element={<Vehicles />}/>
-                <Route path='/startships' element={<Startships />}/>
+                <Route path='/startships' element={<Starships />}/>
                 
                 <Route path='*' element={<h1>404 - NOT FOUND</h1>}/>
             </Routes>
